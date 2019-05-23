@@ -1,26 +1,27 @@
 <template>
 	<div id="app">
-      <h2>Dynamically inserted:</h2>
+      <h2>Why is C such a rude programming language?</h2>
       <div ref="container">
-        <button @click="onClick">Click to insert</button>
+        <Button @click="onClick">Click for the Answer!</Button>
       </div>
     </div>
 </template>
 
 <script>
-import button from './components/button'
-import photo from './components/photo'
+import Button from './components/Button'
+import Vue from 'vue'
+
 
 export default {
   name: 'app',
     components: { Button },
     methods: {
       onClick() {
-        var ComponentClass = Vue.extend(photo)
+        var ComponentClass = Vue.extend(button)
         var instance = new ComponentClass({
             propsData: { type: 'primary' }
         })
-        instance.$slots.default = ['logo.png']
+        instance.$slots.default = ['Because it has no class.']
         instance.$mount()
         this.$refs.container.appendChild(instance.$el)
       }
