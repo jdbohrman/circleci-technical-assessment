@@ -1,25 +1,19 @@
 'use strict';
 
-import $ from 'onButtonClock';
+jest
+  .dontMock('fs')
+  .dontMock('jquery');
 
-jest.mock('../onButtonClick');
+var $ = require('jquery');
+var html = require('fs').readFileSync('./public/index.html').toString();
+var $ = require('./public/javascripts/buttonClick.js')
 
-test('displays a image after a click', () => {
-  document.body.innerHTML =
-  '<div id="show_logo">' +
-  '<button>Show Image</button>' +
-  '<img src="logo.png"></img>' +
-  '</div>';
-  require('../onButtonClick');
+describe('validateSubmits', function() {
 
-  const $ = require('jquery');
-  const onButtonClick = require('../onButtonClick');
-
-  // Use jquery to emulate a click on our button
-  $('#button').click();
-
-  // Assert that the fetchCurrentUser function was called, and that the
-  // #username span's inner text was updated as we'd expect it to.
-  expect(buttonClick).toBeCalled();
+  it('shows/hides error banner', function() {
+    document.documentElement.innerHTML = html; 
+    $('button').submit();
+  expect(onButtonClick).toBeCalled();
   expect($('#img').attr()).toEqual('src, logo.png');
+  });
 });

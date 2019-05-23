@@ -3,9 +3,12 @@ body
   padding: 30px;
 }
 
-.hide{
-  display:none;
+img {
+  display: none;
 }
-.show{
-  display:block;
+#show_logo{
+  margin: 0 auto;
+  max-width: 700px;
+  height: 100px;
+  border-radius: 3px;
 }
