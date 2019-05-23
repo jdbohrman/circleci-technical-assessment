@@ -6,7 +6,7 @@ jest
 
 var $ = require('jquery');
 var html = require('fs').readFileSync('./public/index.html').toString();
-var $ = require('./public/javascripts/buttonClick.js')
+var onButtonClick = require('./public/javascripts/buttonClick.js')
 
 describe('validateSubmits', function() {
 
