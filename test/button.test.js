@@ -6,14 +6,14 @@ jest
 
 var $ = require('jquery');
 var html = require('fs').readFileSync('./public/index.html').toString();
-var onButtonClick = require('./public/javascripts/buttonClick.js')
+var sinon = require('sinon');
+var onButtonClick = require('../public/javascripts/buttonClick.js')
 
 describe('validateSubmits', function() {
 
-  it('shows/hides error banner', function() {
-    document.documentElement.innerHTML = html; 
-    $('button').submit();
-  expect(onButtonClick).toBeCalled();
+  it('Clicks the button and shows the photo', function() {
+
+    expect(mockCallBack).toHaveProperty('callCount', 1);
   expect($('#img').attr()).toEqual('src, logo.png');
   });
 });
