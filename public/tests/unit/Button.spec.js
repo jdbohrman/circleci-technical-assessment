@@ -8,11 +8,11 @@ describe('Button was clicked', () => {
   it('Clicked button calls our method with argument "answer"', () => {
     const spy = sinon.spy()
     const wrapper = mount(Button, {
-      propsData: {
-        answer: spy
+      listeners: {
+        Button: spy
       }
     })
-    wrapper.find('button.answer').trigger('click')
+    wrapper.find('button').trigger('click')
 
     spy.should.have.been.calledWith('answer')
   })

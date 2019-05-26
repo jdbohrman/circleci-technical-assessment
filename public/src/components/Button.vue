@@ -1,20 +1,19 @@
 <template>
 	<div id="Button">
       <h2>Why is C such a rude programming language?</h2>
-      <div>
-         <button class="answer" @click="answer">Answer</button>
-      </div>
+      <button class="answer" v-on:click="answer">Answer</button>
   </div>  
 </template>
 
 <script>
 export default {
   name: "Button",
+  el: "Button",
   methods: {
-    answer: function() {
-      alert("Because it has no class!")
+    showAlert: function () {
+      alert('Because it has no class!!!')
     }
-  }
+  },
 }
 </script>
 
