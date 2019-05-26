@@ -6,14 +6,14 @@
 </template>
 
 <script>
-export default {
-  name: "Button",
-  el: "Button",
-  methods: {
-    showAlert: function () {
-      alert('Because it has no class!!!')
-    }
-  },
+
+export default { 
+	name: "Button",
+ 	methods: {
+    answer: function() {
+      alert("Because it has no class!")
+   	 }
+	}
 }
 </script>
 
