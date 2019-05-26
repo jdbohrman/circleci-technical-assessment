@@ -2,7 +2,7 @@
 	<div id="Button">
       <h2>Why is C such a rude programming language?</h2>
       <div>
-         <button @click="answer">Answer</button>
+         <button class="answer" @click="answer">Answer</button>
       </div>
   </div>  
 </template>
