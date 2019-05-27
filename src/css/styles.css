@@ -1,0 +1,11 @@
+body
+{
+  padding: 30px;
+}
+
+.hide{
+  display:none;
+}
+.show{
+  display:block;
+}

@@ -13,6 +13,14 @@ jobs:
     - run:
         name: update-npm
         command: 'sudo npm install -g npm@latest'
+  working_directory: ~/app
+  docker:
+    image: circleci/node:4.8.2
+  steps:
+    - checkout
+      run:
+        name: run tests
+        command:
 workflows:
   build-and-deploy:
     jobs:
