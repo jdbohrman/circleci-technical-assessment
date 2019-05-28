@@ -3,16 +3,6 @@ version: 2.1
 orbs:
   aws-ecr: circleci/aws-ecr@0.0.2
   aws-ecs: circleci/aws-ecs@0.0.8
-jobs:
-  build:
-  working_directory: ~/app
-  docker:
-    - image: circleci/node:4.8.2
-  steps: 
-    - checkout
-    - run:
-        name: update-npm
-        command: 'sudo npm install -g npm@latest'
 workflows:
   build-and-deploy:
     jobs:
