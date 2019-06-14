@@ -1,7 +1,8 @@
 # CircleCI Technical Assessment: VueJS web app hosted on AWS hosted with ECS. 
 
-# Table of contents
+http://terraform-ecs-359715126.us-east-2.elb.amazonaws.com/
 
+# Table of contents
 * [Prerequisites](https://github.com/jdbohrman/circleci-technical-assessment#prerequisites)
 * [Installation](https://github.com/jdbohrman/circleci-technical-assessment#installation)
 * [CI/CD](https://github.com/jdbohrman/circleci-technical-assessments#ci-cd)
