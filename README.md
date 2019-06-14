@@ -9,9 +9,9 @@
 
 ## Prerequisites
 
-NodeJS
-Docker
-VueJS
+* NodeJS
+* Vue
+* Docker
 
 ## Installation
 
