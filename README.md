@@ -5,7 +5,7 @@
 * [Prerequisites](https://github.com/jdbohrman/circleci-technical-assessment#prerequisites)
 * [Installation](https://github.com/jdbohrman/circleci-technical-assessment#installation)
 * [CI/CD](https://github.com/jdbohrman/circleci-technical-assessments#ci-cd)
-* [Contributors](https://github.com/jdbohrman/circleci-technical-assessment#contributors
+* [Contributors](https://github.com/jdbohrman/circleci-technical-assessment#contributors)
 
 ## Prerequisites
 
